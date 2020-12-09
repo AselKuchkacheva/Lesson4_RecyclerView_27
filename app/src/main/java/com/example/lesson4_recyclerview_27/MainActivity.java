@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.ItemC
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
-            list.add(new Title("Item " + i +" Список заметок", "date"));
+            list.add(new Title("Item " + i +" Список заметок", "--/--/--"));
         }
         button.setOnClickListener(new View.OnClickListener() {
             @Override
